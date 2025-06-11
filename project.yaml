@@ -23,16 +23,18 @@ basic:
 advanced:
     mask: ''
     remove: ''
-    delay: 60
+    delay: 0
     scroll: true
     headers:
-        - { value: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:46.0) Gecko/20100101 Firefox/46.0', header: User-Agent }
         - { value: 'en-US,en;q=0.9', header: accept-language }
         - { value: '1', header: upgrade-insecure-requests }
         - { value: '?1', header: sec-fetch-user }
         - { value: none, header: sec-fetch-site }
         - { value: navigate, header: sec-fetch-mode }
         - { value: document, header: sec-fetch-dest }
+        - { header: Accept, value: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' }
+        - { header: Connection, value: keep-alive }
+        - { header: Upgrade-Insecure-Requests, value: '1' }
     cookies: ''
     custom_js: ''
     custom_css: "html, body, #root {\n   position: unset !important;\n\toverflow: auto !important;\n    display: block !important;\n    opacity: 1 !important;\n}"
@@ -55,7 +57,7 @@ advanced:
         after_login_selector: ''
     performance:
         workers_production: 30
-        workers_nonproduction: 10
+        workers_nonproduction: '13'
         workers_production_delay: 0
         workers_nonproduction_delay: 0
     stabilize: false
