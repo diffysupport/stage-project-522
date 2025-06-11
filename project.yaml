@@ -23,7 +23,7 @@ basic:
 advanced:
     mask: ''
     remove: ''
-    delay: 0
+    delay: 15
     scroll: true
     headers:
         - { value: 'en-US,en;q=0.9', header: accept-language }
@@ -37,16 +37,16 @@ advanced:
         - { value: '1', header: Upgrade-Insecure-Requests }
         - { value: max-age=0, header: cache-control }
         - { value: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36', header: User-Agent }
-        - { header: Referer, value: 'https://development.beatbread.com' }
-        - { header: Accept-Encoding, value: 'gzip, deflate, sach' }
+        - { value: 'https://development.beatbread.com', header: Referer }
+        - { value: 'gzip, deflate, sach', header: Accept-Encoding }
     cookies: ''
     custom_js: ''
-    custom_css: "html, body, #root {\n   position: unset !important;\n\toverflow: auto !important;\n    display: block !important;\n    opacity: 1 !important;\n}"
+    custom_css: ''
     mock_content:
         - { type: title, selector: '' }
     sensitivity: 15
     night_mode: false
-    retina_images: false
+    retina_images: true
     single_ip: false
     login:
         type: none
@@ -64,4 +64,4 @@ advanced:
         workers_nonproduction: '13'
         workers_production_delay: 0
         workers_nonproduction_delay: 0
-    stabilize: false
+    stabilize: true
