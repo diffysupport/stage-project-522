@@ -39,7 +39,7 @@ advanced:
     mock_content:
         - { type: title, selector: '' }
     sensitivity: 15
-    night_mode: true
+    night_mode: false
     retina_images: true
     single_ip: true
     login:
