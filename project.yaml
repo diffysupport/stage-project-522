@@ -40,8 +40,8 @@ advanced:
         - { type: title, selector: '' }
     sensitivity: 15
     night_mode: false
-    retina_images: true
-    single_ip: true
+    retina_images: false
+    single_ip: false
     login:
         type: none
         click_element: false
