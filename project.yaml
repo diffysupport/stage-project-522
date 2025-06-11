@@ -35,8 +35,10 @@ advanced:
         - { value: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', header: Accept }
         - { value: keep-alive, header: Connection }
         - { value: '1', header: Upgrade-Insecure-Requests }
-        - { header: cache-control, value: max-age=0 }
-        - { header: User-Agent, value: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' }
+        - { value: max-age=0, header: cache-control }
+        - { value: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36', header: User-Agent }
+        - { header: Referer, value: 'https://development.beatbread.com' }
+        - { header: Accept-Encoding, value: 'gzip, deflate, sach' }
     cookies: ''
     custom_js: ''
     custom_css: "html, body, #root {\n   position: unset !important;\n\toverflow: auto !important;\n    display: block !important;\n    opacity: 1 !important;\n}"
