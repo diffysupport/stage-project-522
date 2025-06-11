@@ -29,7 +29,7 @@ advanced:
         - { value: '', header: '' }
     cookies: ''
     custom_js: ''
-    custom_css: ".shell.snap {\n  height: auto !important; \n  min-height: 100vh !important; \n}"
+    custom_css: ".shell.snap {\n  height: auto !important; \n  min-height: 100vh !important;\n  overflow: auto !important;\n}"
     mock_content:
         - { type: title, selector: '' }
     sensitivity: 15
