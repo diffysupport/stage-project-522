@@ -24,7 +24,7 @@ advanced:
     mask: ''
     remove: ''
     delay: 15
-    scroll: false
+    scroll: true
     headers:
         - { value: '', header: '' }
     cookies: ''
