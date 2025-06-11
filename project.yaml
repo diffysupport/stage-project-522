@@ -26,7 +26,13 @@ advanced:
     delay: 60
     scroll: true
     headers:
-        - { value: '', header: '' }
+        - { value: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:46.0) Gecko/20100101 Firefox/46.0', header: User-Agent }
+        - { header: accept-language, value: 'en-US,en;q=0.9' }
+        - { header: upgrade-insecure-requests, value: '1' }
+        - { header: sec-fetch-user, value: '?1' }
+        - { header: sec-fetch-site, value: none }
+        - { header: sec-fetch-mode, value: navigate }
+        - { header: sec-fetch-dest, value: document }
     cookies: ''
     custom_js: ''
     custom_css: ".shell.snap {\n  height: auto !important; \n  min-height: 100vh !important;\n  overflow: auto !important;\n}\n\n#root {\n\toverflow: auto !important;\n}\n\n* {\n   box-sizing: border-box !important;\n}"
