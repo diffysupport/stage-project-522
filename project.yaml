@@ -2,7 +2,7 @@ basic:
     name: 'https://www.beatbread.com'
     environments:
         production: 'https://www.beatbread.com'
-        staging: ''
+        staging: 'https://development.beatbread.com/'
         development: ''
     basicAuth:
         production: { user: '', password: '' }
