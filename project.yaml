@@ -36,7 +36,6 @@ advanced:
         - { value: keep-alive, header: Connection }
         - { value: '1', header: Upgrade-Insecure-Requests }
         - { value: max-age=0, header: cache-control }
-        - { value: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36', header: User-Agent }
         - { value: 'https://development.beatbread.com', header: Referer }
         - { value: 'gzip, deflate, sach', header: Accept-Encoding }
     cookies: ''
